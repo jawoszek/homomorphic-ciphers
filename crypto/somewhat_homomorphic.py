@@ -88,24 +88,3 @@ def sum_encrypted(encrypted1, encrypted2):
         output.append(value)
     output.append(previous_carryover)
     return output
-
-
-if __name__ == '__main__':
-    input_value_1 = 84
-    input_value_2 = 69
-    encryption = generate_encryption(10)
-
-    encrypted_value_1 = encrypt(input_value_1, encryption)
-    decrypted_value_1 = decrypt(encrypted_value_1, encryption)
-
-    encrypted_value_2 = encrypt(input_value_2, encryption)
-    decrypted_value_2 = decrypt(encrypted_value_2, encryption)
-
-    encrypted_sum = sum_encrypted(encrypted_value_1, encrypted_value_2)
-    decrypted_sum = decrypt(encrypted_sum, encryption)
-
-    print("input:%d   decrypted:%d   encrypted:%s"
-          % (input_value_1, decrypted_value_1, encrypted_value_1))
-    print("input:%d   decrypted:%d   encrypted:%s"
-          % (input_value_2, decrypted_value_2, encrypted_value_2))
-    print("sum:%d" % decrypted_sum)
