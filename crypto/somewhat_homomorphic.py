@@ -6,7 +6,7 @@ SumResult = collections.namedtuple('SumResult', ['value', 'carryover'])
 
 
 def generate_encryption(L):
-    return Encryption(L, L, L**3, L**5, generate_secret_key(L**3))
+    return Encryption(L, L, L**2, L**5, generate_secret_key(L**2))
 
 
 def generate_secret_key(P):
