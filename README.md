@@ -1,6 +1,6 @@
 # homomorphic-ciphers
 
-This project is an simple example of creating _somewhat homomorphic_ solution, that allows encryption, decryption, and operation of adding conducted on integers.
+This project is an simple example of creating _somewhat homomorphic_ solution, that allows encryption, decryption, and homomorphic addition conducted on integers.
 
 ## Running the project
 
